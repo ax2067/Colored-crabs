@@ -1,15 +1,16 @@
 ﻿#include <iostream>
+#include <ctime> 
+#include <cstdlib> 
+#include <iomanip>
 #include <Windows.h>
-
 using namespace std;
 
 int main()
 {
-	char quit;
-	while (quit != 'n')
-	{
-		setlocale(LC_ALL, "RUS");
-		printf("Привет, привет!Это калькулятор для студентов.Он упростит жизнь студентов с диком мире математики!\n");
+	setlocale(LC_CTYPE, "Russian");
+	int way;
+	do {
+		printf("Привет, привет!Это калькулятор для студентов.Он упростит жизнь студентов в диком мире математики!\n");
 		Sleep(5000);
 		printf("\033c");
 		printf("Чтобы выбрать желаемое действие - введите соответствующее ему число.\n");
@@ -17,28 +18,24 @@ int main()
 		printf("2 - Конвертация в двоичный/шестнадцатиричный код.\n");
 		printf("3 - Работы с матрицами.\n");
 		printf("4 - Операции с функциями и нахождение площадей различных фигур.\n");
-		printf("Любое другое значение - Выход из программы.\n");
-		int n;
-		cin >> n;
-		switch (n)
+		printf("5 - Дополнительные операции (факториал, НОК и НОД).\n");
+		printf("6 - Выход из программы.\n");
+		cin >> way;
+		switch (way)
 		{
-		case 1:
-			printf("\033c");
-			operations(); break;
-		case 2:
-			printf("\033c");
-			convertations(); break;
-		case 3:
-			printf("\033c");
-			matrix(); break;
-		case 4:
-			printf("\033c");
-			functions(); break;
-		default:
-			break;
+		case 1: printf("\033c");
+/*			Operations(); */ break;//------- модуль Ксюши
+		case 2: printf("\033c");
+/*			Conversion();*/ break; //-------- модуль Иры
+		case 3: printf("\033c");
+/*			Matrix();*/ break; //-------- модуль Ани
+		case 4: printf("\033c"); 
+/*			Function();*/ break; //-------- модуль Лёши
+		case 5: printf("\033c");
+/*		    Additionally();*/ break; //-------- модуль Саши
+		default: printf("\033c");// -------- с Никиты память(!)
+			printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
-		cout << "\n\n\n";
-		printf("Введите 'n' чтобы закончить работу проекта или любой символ, чтобы продолжить.\n\n");
-		cin >> quit;
-	}
+
+	} while (way != 6);
 }

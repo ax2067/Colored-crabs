@@ -1,0 +1,20 @@
+﻿Сборка начата 14.12.2021 21:50:48.
+Уровень детализации журнала: Normal.     1>Проект "D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Обращение к "Debug\main.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt main.cpp
+         main.cpp
+     1>D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.cpp(11): error C4700: использована неинициализированная локальная переменная "quit"
+     1>Сборка проекта "D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+       "D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.cpp(11): error C4700: использована неинициализированная локальная переменная "quit"
+
+    Предупреждений: 0
+    Ошибок: 1
+
+Прошло времени 00:00:00.96
