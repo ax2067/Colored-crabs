@@ -3,16 +3,18 @@
 #include <cstdlib> 
 #include <iomanip>
 #include <Windows.h>
+#include "Matrix.h"
+//#include "Operations.h"
 using namespace std;
-
-int main()
+void main()
 {
 	setlocale(LC_CTYPE, "Russian");
 	int way;
+	printf("Привет, привет!Это калькулятор для студентов.Он упростит жизнь студентов в диком мире математики!\n");
+	Sleep(5000);
+	printf("\033c");
 	do {
-		printf("Привет, привет!Это калькулятор для студентов.Он упростит жизнь студентов в диком мире математики!\n");
-		Sleep(5000);
-		printf("\033c");
+
 		printf("Чтобы выбрать желаемое действие - введите соответствующее ему число.\n");
 		printf("1 - Операции над числами.\n");
 		printf("2 - Конвертация в двоичный/шестнадцатиричный код.\n");
@@ -24,11 +26,10 @@ int main()
 		switch (way)
 		{
 		case 1: printf("\033c");
-/*			Operations(); */ break;//------- модуль Ксюши
+/*		Operations(); */ break;//------- модуль Ксюши
 		case 2: printf("\033c");
 /*			Conversion();*/ break; //-------- модуль Иры
-		case 3: printf("\033c");
-/*			Matrix();*/ break; //-------- модуль Ани
+		case 3: Matrix(); break; //-------- модуль Ани
 		case 4: printf("\033c"); 
 /*			Function();*/ break; //-------- модуль Лёши
 		case 5: printf("\033c");

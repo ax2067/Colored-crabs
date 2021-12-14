@@ -1,20 +1,40 @@
-﻿Сборка начата 14.12.2021 21:50:48.
+﻿Сборка начата 14.12.2021 23:41:47.
 Уровень детализации журнала: Normal.     1>Проект "D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.vcxproj" в узле 2 (целевые объекты Build).
      1>InitializeBuildStatus:
          Обращение к "Debug\main.tlog\unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt main.cpp
-         main.cpp
-     1>D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.cpp(11): error C4700: использована неинициализированная локальная переменная "quit"
-     1>Сборка проекта "D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.vcxproj" завершена (целевые объекты Build) с ошибкой.
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Matrix.cpp matrix2.cpp matrix3.cpp matrix4.cpp
+         Matrix.cpp
+         matrix2.cpp
+     1>D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\matrix2.cpp(58,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\matrix2.cpp(59,12): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\matrix2.cpp(60,12): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+     1>D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\matrix2.cpp(61,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+         matrix3.cpp
+         matrix4.cpp
+         Создание кода...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\Debug\main.exe" /INCREMENTAL /ILK:"Debug\main.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\Debug\main.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\Debug\main.lib" /MACHINE:X86 Debug\main.obj
+         Debug\Matrix.obj
+         Debug\matrix2.obj
+         Debug\matrix3.obj
+         Debug\matrix4.obj
+         main.vcxproj -> D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\Debug\main.exe
+       FinalizeBuildStatus:
+         Файл "Debug\main.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\main.tlog\main.lastbuildstate".
+     1>Сборка проекта "D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.vcxproj" завершена (целевые объекты Build).
 
-Ошибка сборки.
+Сборка успешно завершена.
 
        "D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.vcxproj" (целевой объект Build ) (1) ->
        (Целевой объект ClCompile) -> 
-         D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\main.cpp(11): error C4700: использована неинициализированная локальная переменная "quit"
+         D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\matrix2.cpp(58,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+         D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\matrix2.cpp(59,12): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+         D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\matrix2.cpp(60,12): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+         D:\универ\Основы программной инженерии\Лабораторные работы\Проект\Colored-crabs\Сalculator\main\matrix2.cpp(61,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
 
-    Предупреждений: 0
-    Ошибок: 1
+    Предупреждений: 4
+    Ошибок: 0
 
-Прошло времени 00:00:00.96
+Прошло времени 00:00:02.39
