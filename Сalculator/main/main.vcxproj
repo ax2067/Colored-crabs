@@ -24,6 +24,7 @@
     <ProjectGuid>{7c462d2e-4b48-44d5-91d0-b7b5b4e6235b}</ProjectGuid>
     <RootNamespace>main</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Calculator</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Index.cpp" />
     <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="matrix2.cpp" />
     <ClCompile Include="matrix3.cpp" />
