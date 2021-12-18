@@ -1,11 +1,9 @@
 #include "Matrix.h"
-#include "matrix2.h"
-#include "matrix3.h"
-#include "matrix4.h"
-using namespace std;
 
-void Matrix() {
-
+int Matrix() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	char ElementValue[SIZE];
 	setlocale(LC_CTYPE, "Russian");
 	int answer;
 	printf("Здравствуйте! Вы попали в раздел с матрицами!\n");
@@ -31,5 +29,6 @@ void Matrix() {
 		}
 
 	} while (answer != 4);
+	return 0;
 }
 

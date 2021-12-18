@@ -1,14 +1,17 @@
 #include "matrix4.h"
 using namespace std;// ------- просмотреть очищение консольного окна после операции printf("\033c");
 
-void matrix4() {
+int matrix4() {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	char ElementValue[SIZE];
 	int row = 4, col = 4;
 	int i, j;
 	int** a = new int* [row];
 	for (i = 0; i < row; i++)
 		a[i] = new int[col];
 	printf("Введите элемент матрицы\n");
-	for (i = 0; i < row; i++)
+	for (i = 0; i < row; i++) {
 		for (j = 0; j < col; j++)
 		{
 			printf("M[");
@@ -17,8 +20,14 @@ void matrix4() {
 			printf("[");
 			printf("%d", j + 1);
 			printf("]: ");
-			cin >> a[i][j];
+			if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+				printf("Ошибка - введен неправильный символ....\n");
+				system("pause");
+				return 0;
+			}
+			else  a[i][j] = atoi(ElementValue);
 		}
+	}
 	printf("\nИсходная матрица: \n");
 	for (i = 0; i < row; i++)
 	{
@@ -72,4 +81,5 @@ void matrix4() {
 		default:printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
 	} while (operation != 3);
+	return 0;
 }

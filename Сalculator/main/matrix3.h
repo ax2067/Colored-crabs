@@ -3,4 +3,6 @@
 #include <cstdlib> 
 #include <iomanip>
 #include <iostream>
-void matrix3();
+#include <Windows.h>
+#define SIZE 500
+int matrix3();
