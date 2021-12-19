@@ -4,7 +4,7 @@
 #include <iomanip>
 #include <Windows.h>
 #include "Matrix.h"
-//#include "Operations.h"
+#include "Operations.h"
 ///////-------Примечание: если в вашем модуле есть ещё пару модулей - вы и им даёте заголовки, см модуль "Matrix.cpp"-------///////
 // Просто раскомментируйте свой заголовок, не забудьте его создать "ctrl+shift+a", создаёте не новый проект, не новое решение, а просто файл!!!!
 // Пожалуйста, подумайте про "printf("\033c");" - нужно ли это? (очищение строки)
@@ -34,7 +34,7 @@ int main()
 		switch (way)
 		{
 		case 1: printf("\033c");
-/*             Operations(); */break;//------- модуль Ксюши
+             Operations(); break;//------- модуль Ксюши
 		case 2: printf("\033c");
 /*			Conversion();*/ break; //-------- модуль Иры
 		case 3: Matrix(); break; //-------- модуль Ани
