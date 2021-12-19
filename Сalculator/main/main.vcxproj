@@ -140,6 +140,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Conversion.cpp" />
+    <ClCompile Include="Conversion1.cpp" />
+    <ClCompile Include="Conversion2.cpp" />
+    <ClCompile Include="Conversion3.cpp" />
     <ClCompile Include="Index.cpp" />
     <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="matrix2.cpp" />
@@ -148,6 +152,10 @@
     <ClCompile Include="Operations.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Conversion.h" />
+    <ClInclude Include="Conversion1.h" />
+    <ClInclude Include="Conversion2.h" />
+    <ClInclude Include="Conversion3.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="matrix2.h" />
     <ClInclude Include="matrix3.h" />
