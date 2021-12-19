@@ -195,7 +195,7 @@ int Operations()
 	run = true;
 	string  str;
 	cin >> str;
-	if (str != "Hey" xor str != "Здравствуйте" && str != "Hi" xor str != "Hello" && str != "Hellow" xor str != "Привет" && str != "Йо" xor str != "Прив") {
+	if (str != "Hey" || str != "Здравствуйте" xor str != "Hi" || str != "Hello" xor str != "Hellow" || str != "Привет" xor str != "Йо" || str != "Прив") {
 		cout << "Вы забыли самое главное =(";
 		run = false;
 		cout << endl;
