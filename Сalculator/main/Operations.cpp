@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stack>
 #include <cmath>
+#include <windows.h>
 #include "Operations.h"
 
 using namespace std;
@@ -182,6 +183,8 @@ int getRang(char Ch) { //Функция возвращает приоритет операции: "1" для сложения
 int Operations()
 {
 	setlocale(LC_ALL, "rus");
+	SetConsoleCP(1251);
+
 	cout << "   Привет! Это программа - калькулятор!\n";
 	cout << "Руководство по эксплуатации: \n";
 	cout << "   1) Не забудьте поздороваться \n";
@@ -195,7 +198,7 @@ int Operations()
 	run = true;
 	string  str;
 	cin >> str;
-	if (str != "Hey" || str != "Здравствуйте" xor str != "Hi" || str != "Hello" xor str != "Hellow" || str != "Привет" xor str != "Йо" || str != "Прив") {
+	if (str != "Hey" && str != "Здравствуйте" && str != "Hi" && str != "Hello" && str != "Hellow" && str != "Привет" && str != "Йо" && str != "Прив") {
 		cout << "Вы забыли самое главное =(";
 		run = false;
 		cout << endl;
