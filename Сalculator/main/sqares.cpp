@@ -1,4 +1,4 @@
-#include "sqares.hpp"
+#include "sqares.h"
 #include "triangle.hpp"
 #include "rectangle.hpp"
 #include "prlgrm.hpp"
