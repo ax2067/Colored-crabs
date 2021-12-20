@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <stack>
-#include <windows.h>
+#include <Windows.h>
 using namespace std;
 int Operations();
 

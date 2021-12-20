@@ -1,11 +1,11 @@
-﻿#include <iostream>
+#include <iostream>
 #include <ctime> 
 #include <cstdlib> 
 #include <iomanip>
-#include <Windows.h>
+//#include <Windows.h>
 #include "Matrix.h"
 #include "Operations.h"
-#include "sqares.h"
+#include "Sqares.h"
 ///////-------Примечание: если в вашем модуле есть ещё пару модулей - вы и им даёте заголовки, см модуль "Matrix.cpp"-------///////
 // Просто раскомментируйте свой заголовок, не забудьте его создать "ctrl+shift+a", создаёте не новый проект, не новое решение, а просто файл!!!!
 // Пожалуйста, подумайте про "printf("\033c");" - нужно ли это? (очищение строки)
@@ -42,7 +42,7 @@ int main()
 			Conversion(); break; //-------- модуль Иры
 		case 3: Matrix(); break; //-------- модуль Ани
 		case 4: printf("\033c"); 
-/*			*/ Sqares(); break; //-------- модуль Лёши
+                 Sqares(); break; //-------- модуль Лёши
 		case 5: printf("\033c");
 		    Additionally(); break; //-------- модуль Саши
 		case 6: printf("\033c");

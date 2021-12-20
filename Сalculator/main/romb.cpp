@@ -1,6 +1,7 @@
 #include "romb.hpp"
 void Romb()
 {
+    setlocale(LC_ALL, "Ru-ru");
     int initial_data=0;
     cout<<"Что вам известно? \n";
     cout<<"1) Cторона и угол"<<endl;

@@ -12,6 +12,7 @@
 #include "full_consus.hpp"
 void Sqares()
 {
+    setlocale(LC_ALL, "Ru-ru");
     int action=0;
     cout<<"Ввыберите фигуру, площадь которорой необходимо найти \n";
     cout<<"1) Треугольник \n";
@@ -25,6 +26,7 @@ void Sqares()
     cout<<"9) Площадь боковой поверхности пирамиды \n";
     cout<<"10) Площадь боковой поверхности конуса \n";
     cout<<"11) Площадь полной поверхности конуса"<<endl;
+    cout<<"12) Выход из программы \n";
     cin>>action;
     switch (action)
     {
@@ -85,5 +87,6 @@ void Sqares()
             Full_conus();
             break;
         }
+        case 12:break;
     }
 }
