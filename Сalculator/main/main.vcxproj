@@ -140,28 +140,55 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Additionally.cpp" />
+    <ClCompile Include="circle.cpp" />
     <ClCompile Include="Conversion.cpp" />
     <ClCompile Include="Conversion1.cpp" />
     <ClCompile Include="Conversion2.cpp" />
     <ClCompile Include="Conversion3.cpp" />
+    <ClCompile Include="full_consus.cpp" />
+    <ClCompile Include="full_pyramid.cpp" />
     <ClCompile Include="Index.cpp" />
+    <ClCompile Include="kvadrat.cpp" />
+    <ClCompile Include="many_angel.cpp" />
     <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="matrix2.cpp" />
     <ClCompile Include="matrix3.cpp" />
     <ClCompile Include="matrix4.cpp" />
     <ClCompile Include="Operations.cpp" />
+    <ClCompile Include="prlgrm.cpp" />
+    <ClCompile Include="rectangle.cpp" />
+    <ClCompile Include="romb.cpp" />
+    <ClCompile Include="side_conus.cpp" />
+    <ClCompile Include="side_pyramid.cpp" />
+    <ClCompile Include="sqares.cpp" />
+    <ClCompile Include="triangle.cpp" />
     <ClCompile Include="Volume.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Additionally.h" />
+    <ClInclude Include="circle.hpp" />
     <ClInclude Include="Conversion.h" />
     <ClInclude Include="Conversion1.h" />
     <ClInclude Include="Conversion2.h" />
     <ClInclude Include="Conversion3.h" />
+    <ClInclude Include="full_consus.hpp" />
+    <ClInclude Include="full_pyramid.hpp" />
+    <ClInclude Include="Index.h" />
+    <ClInclude Include="kvadrat.hpp" />
+    <ClInclude Include="many_angel.hpp" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="matrix2.h" />
     <ClInclude Include="matrix3.h" />
     <ClInclude Include="matrix4.h" />
     <ClInclude Include="Operations.h" />
+    <ClInclude Include="prlgrm.hpp" />
+    <ClInclude Include="rectangle.hpp" />
+    <ClInclude Include="romb.hpp" />
+    <ClInclude Include="side_conus.hpp" />
+    <ClInclude Include="side_pyramid.hpp" />
+    <ClInclude Include="sqares.h" />
+    <ClInclude Include="triangle.hpp" />
     <ClInclude Include="Volume.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

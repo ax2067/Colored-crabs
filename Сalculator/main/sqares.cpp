@@ -12,6 +12,7 @@
 #include "full_consus.hpp"
 void Sqares()
 {
+    setlocale(LC_CTYPE, "Russian");
     int action=0;
     cout<<"Ввыберите фигуру, площадь которорой необходимо найти \n";
     cout<<"1) Треугольник \n";
