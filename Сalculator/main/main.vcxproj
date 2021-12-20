@@ -150,6 +150,7 @@
     <ClCompile Include="matrix3.cpp" />
     <ClCompile Include="matrix4.cpp" />
     <ClCompile Include="Operations.cpp" />
+    <ClCompile Include="Volume.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Conversion.h" />
@@ -161,6 +162,7 @@
     <ClInclude Include="matrix3.h" />
     <ClInclude Include="matrix4.h" />
     <ClInclude Include="Operations.h" />
+    <ClInclude Include="Volume.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
