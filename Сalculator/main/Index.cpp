@@ -10,9 +10,11 @@
 // Пожалуйста, подумайте про "printf("\033c");" - нужно ли это? (очищение строки)
 //#include "Operations.h"  
 #include "Conversion.h"
+#include "Volume.h"
 //#include "Function.h"
 //#include "Trigonometry.h"
 //#include "Additionally.h"
+//#include "Volume.h"
 using namespace std;
 int main()
 {
@@ -28,7 +30,8 @@ int main()
 		printf("3 - Работы с матрицами.\n");
 		printf("4 - Операции с функциями и нахождение площадей и объёмов различных фигур.\n");
 		printf("5 - Дополнительные операции (факториал, НОК и НОД).\n");
-		printf("6 - Выход из программы.\n");
+		printf("6 - Нахождение объёма фигур.\n");
+		printf("7 - Выход из программы.\n");
 		cin >> way;
 		switch (way)
 		{
@@ -42,6 +45,8 @@ int main()
 		case 5: printf("\033c");
 /*		    Additionally();*/ break; //-------- модуль Саши
 		case 6: printf("\033c");
+			Volume(); break;
+		case 7: printf("\033c");
 			printf("Пока-пока!"); break; ////// --------- хто нибудь придумайте прощальную фразу(!)
 		default: printf("\033c");
 			printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
@@ -49,6 +54,6 @@ int main()
 		cin.clear(); // то возвращаем cin в 'обычный' режим работы
 		cin.ignore(32767, '\n'); // удаляем все
 
-	} while (way != 6);
+	} while (way != 7);
 	return 0;
 }
