@@ -13,7 +13,7 @@
 #include "Volume.h"
 //#include "Function.h"
 //#include "Trigonometry.h"
-//#include "Additionally.h"
+#include "Additionally.h"
 //#include "Volume.h"
 using namespace std;
 int main()
@@ -43,11 +43,11 @@ int main()
 		case 4: printf("\033c"); 
 /*			Function();*/ break; //-------- модуль Лёши
 		case 5: printf("\033c");
-/*		    Additionally();*/ break; //-------- модуль Саши
+		    Additionally(); break; //-------- модуль Саши
 		case 6: printf("\033c");
 			Volume(); break;
 		case 7: printf("\033c");
-			printf("Пока-пока!"); break; ////// --------- хто нибудь придумайте прощальную фразу(!)
+        printf("Спасибо за эксплуатацию нашего калькулятора! Ожидаем отзывов, комментариев и пожеланий."); break; ////// --------- хто нибудь придумайте прощальную фразу(!)UPD[sano]:!!!Придумал вроде!!!
 		default: printf("\033c");
 			printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
