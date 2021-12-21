@@ -198,7 +198,8 @@ int Operations()
 	run = true;
 	string  str;
 	cin >> str;
-	if (str != "Hey" && str != "Здравствуйте" && str != "Hi" && str != "Hello" && str != "Hellow" && str != "Привет" && str != "Йо" && str != "Прив") {
+
+	if (str != "Hey" && str != "Здравствуйте" && str != "Hi" && str != "Hello" && str != "Hellow" && str != "Привет" && str != "Йо" && str != "Прив" && str != "hey" && str != "зpдравствуйте" && str != "hi" && str != "hello" && str != "hellow" && str != "привет" && str != "йо" && str != "прив") {
 		cout << "Вы забыли самое главное =(";
 		run = false;
 		cout << endl;
