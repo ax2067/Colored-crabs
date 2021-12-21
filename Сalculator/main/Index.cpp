@@ -1,8 +1,10 @@
 #include "Index.h"
+
+
 using namespace std;
 int main()
 {
-	setlocale(LC_CTYPE, "Russian");
+	setlocale(LC_ALL, "en_US.UTF8");
 	int way;
 	printf("Привет, привет!Это калькулятор для студентов. Он упростит жизнь студентов в диком мире математики!\n");
 	Sleep(3000);

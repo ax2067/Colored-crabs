@@ -27,7 +27,6 @@ int Matrix() {
 		default: printf("\033c");
 			printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
-
 	} while (answer != 4);
 	return 0;
 }
