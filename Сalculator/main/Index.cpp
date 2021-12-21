@@ -1,4 +1,4 @@
-﻿#include "Index.h"
+#include "Index.h"
 using namespace std;
 int main()
 {
@@ -25,7 +25,7 @@ int main()
 			Conversion(); break; //-------- модуль Иры
 		case 3: Matrix(); break; //-------- модуль Ани
 		case 4: printf("\033c"); 
-/*			*/ Sqares(); break; //-------- модуль Лёши
+                 Sqares(); break; //-------- модуль Лёши
 		case 5: printf("\033c");
 		    Additionally(); break; //-------- модуль Саши
 		case 6: printf("\033c");

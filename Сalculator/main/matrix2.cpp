@@ -3,7 +3,7 @@ using namespace std;
 
 int matrix2() {
 		SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
+        SetConsoleOutputCP(1251);
 	char ElementValue[SIZE];
 	int row = 2, col = 2;
 	int i, j;

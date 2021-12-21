@@ -1,7 +1,7 @@
 #include "triangle.hpp"
 void Triangle()
 {
-    setlocale(LC_CTYPE, "Russian");
+    setlocale(LC_ALL, "Ru-ru");
     int initial_data=0;
     cout<<"Что вам известно? \n";
     cout<<"1) Три стороны \n";
