@@ -2,7 +2,7 @@
 
 void Circle()
 {
-    setlocale(LC_ALL, "Ru-ru");
+    setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно? \n"<<endl;
     cout<<"1) Радиус \n";
