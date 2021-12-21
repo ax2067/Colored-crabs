@@ -1,21 +1,4 @@
-#include <iostream>
-#include <ctime> 
-#include <cstdlib> 
-#include <iomanip>
-//#include <Windows.h>
-#include "Matrix.h"
-#include "Operations.h"
-#include "Sqares.h"
-///////-------Примечание: если в вашем модуле есть ещё пару модулей - вы и им даёте заголовки, см модуль "Matrix.cpp"-------///////
-// Просто раскомментируйте свой заголовок, не забудьте его создать "ctrl+shift+a", создаёте не новый проект, не новое решение, а просто файл!!!!
-// Пожалуйста, подумайте про "printf("\033c");" - нужно ли это? (очищение строки)
-//#include "Operations.h"  
-#include "Conversion.h"
-#include "Volume.h"
-//#include "Function.h"
-//#include "Trigonometry.h"
-#include "Additionally.h"
-//#include "Volume.h"
+#include "Index.h"
 using namespace std;
 int main()
 {
