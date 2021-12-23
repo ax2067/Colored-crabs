@@ -2,8 +2,8 @@
 using namespace std;
 
 int matrix3() {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
+	//SetConsoleCP(1251);
+	//SetConsoleOutputCP(1251);
 	char ElementValue[SIZE];
 	int row = 3, col = 3;
 	int i, j;
@@ -152,7 +152,7 @@ int matrix3() {
 				}
 				cout << endl;
 			}
-			printf("\033c"); break;
+			break;
 		case 5:
 			printf("\033c");
 			printf("¬ведите элемент матрицы, которую необходимо отн€ть от исходной\n");

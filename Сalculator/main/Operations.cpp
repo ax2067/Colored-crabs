@@ -182,6 +182,7 @@ int getRang(char Ch) { //Функция возвращает приоритет операции: "1" для сложения
 
 int Operations()
 {
+	setlocale(LC_ALL, "en_US.UTF8");
 	setlocale(LC_ALL, "rus");
 	SetConsoleCP(1251);
 
