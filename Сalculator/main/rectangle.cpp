@@ -1,9 +1,10 @@
 #include "rectangle.hpp"
 void Rectangle()
 {
+    setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно? \n";
-    cout<<"1) Две стороны";
+    cout<<"1) Две стороны \n";
     cout<<"2) Cторона и высота \n";
     cout<<"3) Две диагонали \n";
     cin>>initial_data;

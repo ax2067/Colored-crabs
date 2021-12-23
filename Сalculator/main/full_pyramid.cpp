@@ -1,6 +1,7 @@
 #include "full_pyramid.hpp"
 void Full_pyramid()
 {
+    setlocale(LC_ALL, "en_US.UTF8");
     int side_osn=0,amount=0,apofema=0;
     float square=0;
     cout<<"Введите сторону \n";

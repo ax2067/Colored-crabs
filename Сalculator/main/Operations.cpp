@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stack>
 #include <cmath>
-#include <windows.h>
+#include <Windows.h>
 #include "Operations.h"
 
 using namespace std;

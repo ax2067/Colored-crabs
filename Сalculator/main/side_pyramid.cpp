@@ -1,7 +1,7 @@
 #include "side_pyramid.hpp"
 void Side_pyramid()
 {
-    setlocale(LC_CTYPE, "Russian");
+    setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно?"<<endl;
     cout<<"1) Количество боковых граней и их площадь"<<endl;

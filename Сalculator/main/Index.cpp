@@ -1,8 +1,10 @@
-﻿#include "Index.h"
+#include "Index.h"
+
+
 using namespace std;
 int main()
 {
-	setlocale(LC_CTYPE, "Russian");
+	setlocale(LC_ALL, "en_US.UTF8");
 	int way;
 	printf("Привет, привет!Это калькулятор для студентов. Он упростит жизнь студентов в диком мире математики!\n");
 	Sleep(3000);
@@ -25,10 +27,8 @@ int main()
 			Conversion(); break; //-------- модуль Иры
 		case 3: Matrix(); break; //-------- модуль Ани
 		case 4: printf("\033c"); 
-               Sqares(); break; //-------- модуль Лёши
-		case 5: printf("\033c"); //-------- модуль Иры
-			Volume(); break;
-		case 6: printf("\033c");
+                 Sqares(); break; //-------- модуль Лёши
+		case 5: printf("\033c");
 		    Additionally(); break; //-------- модуль Саши
 		case 7: printf("\033c");
         printf("Спасибо за эксплуатацию нашего калькулятора! Ожидаем отзывов, комментариев и пожеланий."); break;

@@ -2,7 +2,7 @@
 using namespace std;// ------- просмотреть очищение консольного окна после операции printf("\033c");
 
 int matrix4() {
-	SetConsoleCP(1251);
+    SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	char ElementValue[SIZE];
 	int row = 4, col = 4;

@@ -1,6 +1,7 @@
 #include "prlgrm.hpp"
 void Prglrm()
 {
+    setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно? \n";
     cout<<"1) Две стороны и угол между ними \n";
