@@ -28,6 +28,8 @@ int Matrix() {
 			printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
 
+		cin.clear();
+		cin.ignore(32767, '\n');
 	} while (answer != 4);
 	return 0;
 }

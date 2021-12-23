@@ -1,7 +1,7 @@
 #include "full_consus.hpp"
 void Full_conus()
 {
-    setlocale(LC_ALL, "Ru-ru");
+    setlocale(LC_ALL, "en_US.UTF8");
     int radius=0,obrazuys=0;
     float square=0;
     cout<<"Введите радиус \n";
