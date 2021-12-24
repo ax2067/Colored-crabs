@@ -1,14 +1,14 @@
-#include "sqares.h"
+#include "Squares.h"
 
 
-void Sqares()
+void Squares()
 {
     setlocale(LC_ALL, "en_US.UTF8");
     int action=0;
     cout<<"Ввыберите фигуру, площадь которорой необходимо найти \n";
     cout<<"1) Треугольник \n";
     cout<<"2) Прямоугольник \n";
-    cout<<"3) Параллелограм \n";
+    cout<<"3) Параллелограмм \n";
     cout<<"4) Квадрат \n";
     cout<<"5) Ромб \n";
     cout<<"6) Круг \n";

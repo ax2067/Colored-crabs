@@ -48,7 +48,7 @@
     <ClCompile Include="Volume.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="sqares.cpp">
+    <ClCompile Include="Squares.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="side_conus.cpp">
@@ -119,7 +119,7 @@
     <ClInclude Include="Volume.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="sqares.h">
+    <ClInclude Include="Squares.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="side_pyramid.hpp">

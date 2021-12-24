@@ -14,4 +14,4 @@
 #include "full_consus.hpp"
 #include <Windows.h>
 using namespace std;
-void Sqares();
+void Squares();

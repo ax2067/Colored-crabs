@@ -161,7 +161,7 @@
     <ClCompile Include="romb.cpp" />
     <ClCompile Include="side_conus.cpp" />
     <ClCompile Include="side_pyramid.cpp" />
-    <ClCompile Include="sqares.cpp" />
+    <ClCompile Include="Squares.cpp" />
     <ClCompile Include="triangle.cpp" />
     <ClCompile Include="Volume.cpp" />
   </ItemGroup>
@@ -187,7 +187,7 @@
     <ClInclude Include="romb.hpp" />
     <ClInclude Include="side_conus.hpp" />
     <ClInclude Include="side_pyramid.hpp" />
-    <ClInclude Include="sqares.h" />
+    <ClInclude Include="Squares.h" />
     <ClInclude Include="triangle.hpp" />
     <ClInclude Include="Volume.h" />
   </ItemGroup>

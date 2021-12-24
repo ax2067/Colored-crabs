@@ -29,7 +29,7 @@ int main()
 			Conversion(); break; //-------- модуль Иры
 		case 3: Matrix(); break; //-------- модуль Ани
 		case 4: printf("\033c"); 
-                 Sqares(); break; //-------- модуль Лёши
+			  Squares(); break; //-------- модуль Лёши
 		case 5: printf("\033c");
 		    Additionally(); break; //-------- модуль Саши
 		case 7: printf("\033c");
