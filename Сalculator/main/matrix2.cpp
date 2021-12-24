@@ -192,7 +192,7 @@ int matrix2() {
 				cout << endl;
 			}
 			break;
-		case 7: printf("\033c"); break;
+		case 7: break;
 		default: printf("\033c"); printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
 		cin.clear();
