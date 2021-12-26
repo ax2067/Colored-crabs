@@ -1,23 +1,14 @@
-#include "sqares.h"
-#include "triangle.hpp"
-#include "rectangle.hpp"
-#include "prlgrm.hpp"
-#include "kvadrat.hpp"
-#include "romb.hpp"
-#include "circle.hpp"
-#include "many_angel.hpp"
-#include "side_pyramid.hpp"
-#include "full_pyramid.hpp"
-#include "side_conus.hpp"
-#include "full_consus.hpp"
-void Sqares()
+#include "Squares.h"
+
+
+void Squares()
 {
     setlocale(LC_ALL, "en_US.UTF8");
     int action=0;
     cout<<"Ввыберите фигуру, площадь которорой необходимо найти \n";
     cout<<"1) Треугольник \n";
     cout<<"2) Прямоугольник \n";
-    cout<<"3) Параллелограм \n";
+    cout<<"3) Параллелограмм \n";
     cout<<"4) Квадрат \n";
     cout<<"5) Ромб \n";
     cout<<"6) Круг \n";

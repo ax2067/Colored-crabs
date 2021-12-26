@@ -39,7 +39,8 @@ void Conversion3()
 			{
 				cout << "¬ведите корректный вариант" << endl;
 			}
-			break;
 		}
+		cin.clear();
+		cin.ignore(32767, '\n');
 	} while (switch_on != 4);
 }

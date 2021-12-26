@@ -18,7 +18,7 @@ void Conversion2()
 		case 1:
 			printf("¬ведите число:\n");
 			cin >> oct >> number;
-			//_itoa_s(number, tmp, 2);
+			_itoa_s(number, tmp, 2);
 			cout << "„исло в двоичной системе счислени€: " << tmp << endl;
 			break;
 		case 2:
@@ -39,7 +39,8 @@ void Conversion2()
 			{
 				cout << "¬ведите корректный вариант" << endl;
 			}
-			break;
 		}
+		cin.clear();
+		cin.ignore(32767, '\n');
 	} while (switch_on != 4);
 }

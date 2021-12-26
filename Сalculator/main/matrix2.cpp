@@ -7,6 +7,7 @@ int matrix2() {
 	char ElementValue[SIZE];
 	int row = 2, col = 2;
 	int i, j;
+	float k;
 	int** a = new int* [row];
 	for (i = 0; i < row; i++)
 		a[i] = new int[col];
@@ -45,18 +46,19 @@ int matrix2() {
 		printf("3 - найти обратную матрицу\n");
 		printf("4 - сложение матриц\n");
 		printf("5 - разность матриц\n");
-		printf("6 - умножение матриц\n");
-		printf("7 - умножение матрицы на число\n");
-		printf("8 - выход\n");
+		printf("6 - умножение матрицы на число\n");
+		printf("7 - выход\n");
 		cin >> operation;
 		determinant = a[0][0] * a[1][1] - a[0][1] * a[1][0];
 		switch (operation)
 		{
 		case 1:
+			printf("\033c");
 			printf("\nОпределитель исходной матрицы: ");
 			printf("%d\n", determinant);
 			break;
 		case 2:
+			printf("\033c");
 			if (determinant)
 				printf("\n Ранг матрицы равен 2!\n ");
 			else if (a[0][0] || a[0][1] || a[1][0] || a[1][1])
@@ -65,6 +67,7 @@ int matrix2() {
 				printf("\n Это нулевая матрица!");
 			break;
 		case 3:
+			printf("\033c");
 			float delta;
 			delta = 1 / (float)determinant;
 			if (determinant) {
@@ -91,6 +94,7 @@ int matrix2() {
 				printf("\n У этой матрицы не будет обратной, т.к. её определитель равен 0!\n ");
 			break;
 		case 4:
+			printf("\033c");
 			int b[2][2];
 			printf("Введите элемент матрицы, которую необходимо сложить с исходной\n");
 			for (i = 0; i < row; i++)
@@ -105,7 +109,22 @@ int matrix2() {
 					cin >> b[i][j];
 				}
 			int c[2][2];
-			printf("Результат сложения: \n");
+			printf("\nВведённая матрица: \n");
+			for (i = 0; i < row; i++)
+			{
+				for (j = 0; j < col; j++)
+					cout << setw(4) << b[i][j] << "  ";
+				cout << endl;
+			}
+			printf("\nИсходная матрица: \n");
+			for (i = 0; i < row; i++)
+			{
+				for (j = 0; j < col; j++)
+					cout << setw(4) << a[i][j] << "  ";
+				cout << endl;
+			}
+
+			printf(" \nРезультат сложения: \n");
 			for (i = 0; i < row; i++)
 			{	for (j = 0; j < col; j++){
 					c[i][j] = b[i][j] + a[i][j];
@@ -114,7 +133,7 @@ int matrix2() {
 					cout << endl;
 			} break;
 		case 5:
-
+			printf("\033c");
 			printf("Введите элемент матрицы, которую необходимо отнять от исходной\n");
 			for (i = 0; i < row; i++)
 				for (j = 0; j < col; j++)
@@ -127,8 +146,22 @@ int matrix2() {
 					printf("]: ");
 					cin >> b[i][j];
 				}
+			printf("\nВведённая матрица: \n");
+			for (i = 0; i < row; i++)
+			{
+				for (j = 0; j < col; j++)
+					cout << setw(4) << b[i][j] << "  ";
+				cout << endl;
+			}
+			printf("\nИсходная матрица: \n");
+			for (i = 0; i < row; i++)
+			{
+				for (j = 0; j < col; j++)
+					cout << setw(4) << a[i][j] << "  ";
+				cout << endl;
+			}
 
-			printf("Результат сложения: \n");
+			printf("Результат разности: \n");
 			for (i = 0; i < row; i++)
 			{
 				for (j = 0; j < col; j++) {
@@ -137,9 +170,33 @@ int matrix2() {
 				}
 				cout << endl;
 			} break;
-		case 8: break;
-		default:printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
+		case 6:
+			printf("\033c");
+			printf("Введите число, которое надо умножить на исходную матрицу: \n");
+			cin >> k;
+			printf("\nИсходная матрица: \n");
+			for (i = 0; i < row; i++)
+			{
+				for (j = 0; j < col; j++)
+					cout << setw(4) << a[i][j] << "  ";
+				cout << endl;
+			}
+
+			printf("Результат перемножения: \n");
+			for (i = 0; i < row; i++)
+			{
+				for (j = 0; j < col; j++) {
+					c[i][j] = k * a[i][j];
+					cout << setw(4) << c[i][j] << "  ";
+				}
+				cout << endl;
+			}
+			break;
+		case 7: break;
+		default: printf("\033c"); printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
-	} while (operation != 4);
+		cin.clear();
+		cin.ignore(32767, '\n');
+	} while (operation != 7);
 	return 0;
 }

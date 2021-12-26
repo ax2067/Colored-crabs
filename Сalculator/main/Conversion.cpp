@@ -26,14 +26,15 @@ void Conversion()
 			Conversion3();
 			break;
 		case 4:
-			cout << "Работа окончена.";
+			cout << "Работа окончена." << endl;
 			break;
 		default:
 			if (operation > 4)
 			{
 				cout << "Введите корректный вариант" << endl;
 			}
-			break;
 		}
+		cin.clear();
+		cin.ignore(32767, '\n');
 	} while (operation != 4);
 }
