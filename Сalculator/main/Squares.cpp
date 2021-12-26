@@ -3,7 +3,7 @@
 
 void Squares()
 {
-    while true
+    while (true)
     {
     setlocale(LC_ALL, "en_US.UTF8");
     int action=0;
