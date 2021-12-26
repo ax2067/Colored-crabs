@@ -27,13 +27,15 @@
   font-family: Custom;
   margin: 0px;
   color: white;
+  font-size: 25px;
 }
 
 body{
-  animation: back 20s alternate infinite;
+  animation: back 15s alternate infinite;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: darkviolet;
 }
 .container{
   display: flex;
@@ -41,23 +43,24 @@ body{
 
 .flex{
   display: flex;
+  margin-bottom: 200px;
 }
 
 .div1{
-  flex-basis: 8%;
+  flex-basis: 14%;
 }
 
 .div2{
-  flex-basis: 84%;
+  flex-basis: 72%;
 }
 
 .div3{
-  flex-basis: 8%;
+  flex-basis: 14%;
 }
 .menu-main{
 /* пункты меню скрыты */
 display: none;
-padding: 0;
+padding: 0;+
 margin: 0;
 float: right;
 
@@ -105,8 +108,7 @@ display: block;
 }
 
 p{
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-bottom: 50px;
   margin-top: 50px;
 }
 
@@ -131,5 +133,4 @@ img.teamleader{
   margin-top: 100px;
   margin-right: 15px;
   flex: 1;
-
 }
