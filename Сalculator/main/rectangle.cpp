@@ -19,6 +19,8 @@ void Rectangle()
             cin>>side1;
             cout<<"Введите сторону / высоту \n";
             cin>>side2;
+            if ((side1<=0) or (side2<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=side1*side2;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -31,6 +33,8 @@ void Rectangle()
             cin>>diag1;
             cout<<"Введите диагональ 2 \n";
             cin>>diag2;
+            if ((diag1<=0) or (diag2<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=0.5*diag1*diag2;
             cout<<"Площадь равна "<<square<<endl;
             break;

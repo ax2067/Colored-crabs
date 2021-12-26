@@ -17,6 +17,8 @@ void Side_pyramid()
             cin>>amount;
             cout<<"Введите площадь боковой грани \n";
             cin>>side_squrae;
+            if ((amount<=0) or (side_squrae<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=side_squrae*amount;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -29,6 +31,8 @@ void Side_pyramid()
             cin>>perimetr;
             cout<<"Введиет апофему \n";
             cin>>apofema;
+            if ((perimetr<=0) or (apofema<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=apofema*perimetr;
             cout<<"Площадь равна "<<square<<endl;
             break;

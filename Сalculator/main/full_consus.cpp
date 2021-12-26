@@ -8,6 +8,8 @@ void Full_conus()
     cin>>radius;
     cout<<"Введите образующую \n";
     cin>>obrazuys;
+    if ((radius<=0) or (obrazuys<=0))
+    {cout<<"Данные некорректны \n"; break}
     square=(3.14*radius*radius)+(3.14*radius*obrazuys);
-    cout<<"Введите сторону 1 \n";
+    cout<<squre<<"\n";
 }

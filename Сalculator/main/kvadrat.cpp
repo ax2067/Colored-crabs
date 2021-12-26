@@ -19,6 +19,8 @@ void Kvadrat()
             float square=0;
             cout<<"Введите сторону \n";
             cin>>side1;
+            if ((side1<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=side1*side1;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -29,6 +31,8 @@ void Kvadrat()
             float square=0;
             cout<<"Введите диагональ 1 \n";
             cin>>diag1;
+            if ((diag1<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=diag1*diag1;
             cout<<"Площадь равна "<<square<<endl;
             break;

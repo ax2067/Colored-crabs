@@ -21,6 +21,8 @@ void Prglrm()
             cin>>side2;
             cout<<"Пожалуйста, введите угол в градусах \n";
             cin>>angel;
+            if ((side1<=0) or (side2<=0) or (angel<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=sin(3.14/360*angel)*side1*side2;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -33,6 +35,8 @@ void Prglrm()
             cin>>side1;
             cout<<"Введите сторону 2 \n";
             cin>>height;
+            if ((side1<=0) or (height<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=side1*height;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -47,6 +51,8 @@ void Prglrm()
             cin>>diag2;
             cout<<"Пожалуйста, введите угол в градусах \n";
             cin>>angel;
+            if ((diag1<=0) or (diag2<=0) or (angel<=0))
+            {cout<<"Данные некорректны \n"; break}
             square=sin(3.14/360*angel)*diag1*diag2*0.5;
             cout<<"Площадь равна "<<square<<endl;
             break;

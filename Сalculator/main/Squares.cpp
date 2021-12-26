@@ -3,6 +3,8 @@
 
 void Squares()
 {
+    while true
+    {
     setlocale(LC_ALL, "en_US.UTF8");
     int action=0;
     cout<<"Ввыберите фигуру, площадь которорой необходимо найти \n";
@@ -79,5 +81,6 @@ void Squares()
             break;
         }
         case 12:break;
+    }
     }
 }
