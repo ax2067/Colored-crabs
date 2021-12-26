@@ -2,4 +2,5 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
-void Volume();
+#define SIZE 500
+int Volume();
