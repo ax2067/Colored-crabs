@@ -9,7 +9,7 @@ void Full_conus()
     cout<<"Введите образующую \n";
     cin>>obrazuys;
     if ((radius<=0) or (obrazuys<=0))
-    {cout<<"Данные некорректны \n"; break}
+    {cout<<"Данные некорректны \n"; break;}
     square=(3.14*radius*radius)+(3.14*radius*obrazuys);
     cout<<square<<"\n";
 }

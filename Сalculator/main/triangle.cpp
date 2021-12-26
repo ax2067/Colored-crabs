@@ -21,7 +21,7 @@ void Triangle()
             cout<<"Введите сторону 1 \n";
             cin>>side3;
             if ((side1<=0) or (side2<=0) or (side3<=0))
-            {cout<<"Данные некорректны \n"; break}
+            {cout<<"Данные некорректны \n"; break;}
             half_per=(side1+side2+side3)/2;
             square=sqrt(half_per*(half_per-side1)*(half_per-side2)*(half_per-side3));
             cout<<"Площадь равна "<<square<<endl;
@@ -38,7 +38,7 @@ void Triangle()
             cout<<"Пожалуйста, введите угол в градусах \n";
             cin>>angel;
             if ((side1<=0) or (side2<=0) or (angel<=0))
-            {cout<<"Данные некорректны \n"; break}
+            {cout<<"Данные некорректны \n"; break;}
             square=sin(3.14/360*angel)*0.5*side1*side2;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -52,7 +52,7 @@ void Triangle()
             cout<<"Введите высоту \n";
             cin>>height;
             if ((side1<=0) or (height<=0))
-            {cout<<"Данные некорректны \n"; break}
+            {cout<<"Данные некорректны \n"; break;}
             square=0.5*side1*height;
             cout<<"Площадь равна "<<square<<endl;
             break;

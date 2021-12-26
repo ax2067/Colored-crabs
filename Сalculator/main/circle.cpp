@@ -18,7 +18,7 @@ void Circle()
             cout<<"Введите радиус \n";
             cin>>radius;
             if ((radius<=0))
-            {cout<<"Данные некорректны \n"; break}
+            {cout<<"Данные некорректны \n"; break;}
             square=3.14*radius*radius;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -30,7 +30,7 @@ void Circle()
             cout<<"Введите длину окружности (без П) \n";
             cin>>length;
             if ((side3<=0))
-            {cout<<"Данные некорректны \n"; break}
+            {cout<<"Данные некорректны \n"; break;}
             length=length*3.14;
             square=length/(2*3.14);
             square=square*square*3.14;
