@@ -103,7 +103,7 @@ int Volume()
 				return 0;
 			}
 			else  square1 = atoi(ElementValue);
-			if (square < square1)
+			if (square <= square1)
 				cout << "Некорректные данные!" << endl;
 			else {
 				volume = (height * (square + square1 + sqrt(square * square1))) / 3;
@@ -170,7 +170,7 @@ int Volume()
 				return 0;
 			}
 			else  radius = atoi(ElementValue);
-			if (radius < radius1)
+			if (radius <= radius1)
 				cout << "Некорректные данные!" << endl;
 			else {
 				volume = (pi * height * (pow(radius, 2) + radius * radius1 + pow(radius1, 2))) / 3;
@@ -178,7 +178,7 @@ int Volume()
 			}
 			break;
 		case 7:
-			cout << "Работа окончена. Для продолжения нажмите любую кнопку";
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
 			break;
 		default:
 			if (switch_on > 7)
