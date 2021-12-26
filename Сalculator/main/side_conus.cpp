@@ -9,7 +9,7 @@ void Side_conus()
     cout<<"Введите образующую \n";
     cin>>obrazuyus;
     if ((radius<=0) or (obrazuyus<=0))
-    {cout<<"Данные некорректны \n"; break;}
+    {cout<<"Данные некорректны \n"; exit();}
     square=3.14*radius*obrazuyus;
     cout<<square<<endl;
 }

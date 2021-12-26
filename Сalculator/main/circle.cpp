@@ -29,7 +29,7 @@ void Circle()
             float square=0;
             cout<<"Введите длину окружности (без П) \n";
             cin>>length;
-            if ((side3<=0))
+            if ((length<=0))
             {cout<<"Данные некорректны \n"; break;}
             length=length*3.14;
             square=length/(2*3.14);
