@@ -82,10 +82,22 @@ h2{
   text-align: center;
   margin: 15px;
 }
+
+h3{
+  font-family: Custom;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin: 15px;
+}
 nav{
   float;
   position: fixed;
   bottom: 45%;
+}
+i a{
+  color: #AFEEEE;
+  text-decoration: none;
 }
 .menu-list{
   list-style-type: none;
