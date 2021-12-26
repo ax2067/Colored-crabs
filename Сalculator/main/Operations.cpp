@@ -195,21 +195,19 @@ int Operations()
 	cout << "   Введите выражение: ";
 	char Ch, Char;//Переменная, в которую будет записываться текущий обрабатываемый символ
 	double value;
-	bool run;
+	bool run, check;
 	run = true;
 	string  str;
 	cin >> str;
-<<<<<<< HEAD
-
-	if (str != "Hey" && str != "Здравствуйте" && str != "Hi" && str != "Hello" && str != "Hellow" && str != "Привет" && str != "Йо" && str != "Прив" && str != "hey" && str != "зpдравствуйте" && str != "hi" && str != "hello" && str != "hellow" && str != "привет" && str != "йо" && str != "прив") {
-=======
 	if (str != "Hey" && str != "Здравствуйте" && str != "Hi" && str != "Hello" && str != "Hellow" && str != "Привет" && str != "Йо" && str != "Прив" && str != "hey" && str != "здравствуй" && str != "здравствуйте" && str != "hi" && str != "hello" && str != "hellow" && str != "привет" && str != "йо" && str != "прив") {
->>>>>>> c87647ad16c9805c31bc11ac673ee6282fde727b
 		cout << "Вы забыли самое главное =(";
 		run = false;
 		cout << endl;
 		system("pause");
 		return 0;
+	}
+	else {
+		check = true;
 	}
 
 	bool flag = 1; //Нужен для того, чтобы программа смогла отличить унарный минус (-5) от вычитания (2-5)
@@ -340,6 +338,15 @@ int Operations()
 		}
 		else continue; //Если все хорошо	
 	}
+	if (Stack_o.size() == 0 && Stack_n.size() == 0)
+		if (check) {
+			cout << "И тебе привет!" << endl;
+			return 0;
+		}
+		else {
+			cout << "Может попробовать еще раз? =)" << endl;
+			return 0;
+		}
 	if (run == true) {
 		if (Stack_n.top().value)
 			cout << "   Ответ: " << Stack_n.top().value << endl; //Выводим ответ
