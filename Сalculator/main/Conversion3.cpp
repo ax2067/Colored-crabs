@@ -32,7 +32,7 @@ void Conversion3()
 			cout << "Число в восьмеричной системе счисления: " << oct << number << endl;
 			break;
 		case 4:
-			cout << "Работа окончена.";
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
 			break;
 		default:
 			if (switch_on > 4)

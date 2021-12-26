@@ -48,7 +48,13 @@ int matrix2() {
 		printf("5 - разность матриц\n");
 		printf("6 - умножение матрицы на число\n");
 		printf("7 - выход\n");
-		cin >> operation;
+        cin >> ElementValue;
+			if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+				printf("Ошибка - введен неправильный символ....\n");
+				system("pause");
+				return 0;
+			}
+			else operation = atoi(ElementValue);
 		determinant = a[0][0] * a[1][1] - a[0][1] * a[1][0];
 		switch (operation)
 		{
@@ -106,7 +112,13 @@ int matrix2() {
 					printf("[");
 					printf("%d", j + 1);
 					printf("]: ");
-					cin >> b[i][j];
+					cin >> ElementValue;
+					if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+						printf("Ошибка - введен неправильный символ....\n");
+						system("pause");
+						return 0;
+					}
+					else  b[i][j] = atoi(ElementValue);
 				}
 			int c[2][2];
 			printf("\nВведённая матрица: \n");
@@ -144,7 +156,13 @@ int matrix2() {
 					printf("[");
 					printf("%d", j + 1);
 					printf("]: ");
-					cin >> b[i][j];
+					cin >> ElementValue;
+					if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+						printf("Ошибка - введен неправильный символ....\n");
+						system("pause");
+						return 0;
+					}
+					else  b[i][j] = atoi(ElementValue);
 				}
 			printf("\nВведённая матрица: \n");
 			for (i = 0; i < row; i++)
@@ -173,7 +191,13 @@ int matrix2() {
 		case 6:
 			printf("\033c");
 			printf("Введите число, которое надо умножить на исходную матрицу: \n");
-			cin >> k;
+			cin >> ElementValue;
+			if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+				printf("Ошибка - введен неправильный символ....\n");
+				system("pause");
+				return 0;
+			}
+			else  k = atoi(ElementValue);
 			printf("\nИсходная матрица: \n");
 			for (i = 0; i < row; i++)
 			{
@@ -192,7 +216,9 @@ int matrix2() {
 				cout << endl;
 			}
 			break;
-		case 7: break;
+		case 7: 
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
+			break;
 		default: printf("\033c"); printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
 		cin.clear();

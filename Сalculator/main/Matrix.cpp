@@ -23,7 +23,9 @@ int Matrix() {
 			matrix3(); break;
 		case 3: printf("\033c");
 			matrix4(); break;
-		case 4: printf("\033c"); break;
+		case 4: printf("\033c"); 
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
+			break;
 		default: printf("\033c");
 			printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}

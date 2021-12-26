@@ -195,7 +195,7 @@ int Operations()
 	cout << "   Введите выражение: ";
 	char Ch, Char;//Переменная, в которую будет записываться текущий обрабатываемый символ
 	double value;
-	bool run;
+	bool run, check;
 	run = true;
 	string  str;
 	cin >> str;
@@ -205,6 +205,9 @@ int Operations()
 		cout << endl;
 		system("pause");
 		return 0;
+	}
+	else {
+		check = true;
 	}
 
 	bool flag = 1; //Нужен для того, чтобы программа смогла отличить унарный минус (-5) от вычитания (2-5)
@@ -335,8 +338,18 @@ int Operations()
 		}
 		else continue; //Если все хорошо	
 	}
+	if (Stack_o.size() == 0 && Stack_n.size() == 0)
+		if (check) {
+			cout << "И тебе привет!" << endl;
+			return 0;
+		}
+		else {
+			cout << "Может попробовать еще раз? =)" << endl;
+			return 0;
+		}
 	if (run == true) {
-		cout << "   Ответ: " << Stack_n.top().value << endl; //Выводим ответ
+		if (Stack_n.top().value)
+			cout << "   Ответ: " << Stack_n.top().value << endl; //Выводим ответ
 		return 0;
 	}
 	cout << "   Ответ: " << Stack_n.top().value << endl; //Выводим ответ

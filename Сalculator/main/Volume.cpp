@@ -8,6 +8,7 @@ void Volume()
 	const float pi = 3.1415926;
 	do
 	{
+		setlocale(LC_CTYPE, "Russian");
 		printf("Найти объём...\n");
 		printf("1 - ...параллелепипеда\n");
 		printf("2 - ...пирамиды\n");
@@ -44,8 +45,12 @@ void Volume()
 			cin >> square;
 			cout << "Введите меньшего площадь основания: " << endl;
 			cin >> square1;
-			volume = (height * (square + square1 + sqrt(square * square1))) / 3;
-			cout << "Объём усечённой пирамиды = " << volume << endl;
+			if (square < square1)
+				cout << "Некорректные данные!" << endl;
+			else {
+				volume = (height * (square + square1 + sqrt(square * square1))) / 3;
+				cout << "Объём усечённой пирамиды = " << volume << endl;
+			}
 			break;
 		case 4:
 			cout << "Введите радиус шара: " << endl;
@@ -62,17 +67,21 @@ void Volume()
 			cout << "Объём конуса = " << volume << endl;
 			break;
 		case 6:
+			cout << "Введите высоту конуса: " << endl;
+			cin >> height;
 			cout << "Введите радиус меньшего основания конуса: " << endl;
 			cin >> radius1;
 			cout << "Введите радиус большего основания конуса: " << endl;
 			cin >> radius;
-			cout << "Введите высоту конуса: " << endl;
-			cin >> height;
-			volume = (pi * height * (pow(radius, 2) + radius * radius1 + pow(radius1, 2))) / 3;
-			cout << "Объём усечённого конуса = " << volume << endl;
+			if (radius < radius1)
+				cout << "Некорректные данные!" << endl;
+			else {
+				volume = (pi * height * (pow(radius, 2) + radius * radius1 + pow(radius1, 2))) / 3;
+				cout << "Объём усечённого конуса = " << volume << endl;
+			}
 			break;
 		case 7:
-			cout << "Работа окончена.";
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку";
 			break;
 		default:
 			if (switch_on > 7)

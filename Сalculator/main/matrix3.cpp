@@ -49,7 +49,13 @@ int matrix3() {
 		printf("5 - разность матриц\n");
 		printf("6 - умножение матрицы на число\n");
 		printf("7 - выход\n");
-		cin >> operation;
+		cin >> ElementValue;
+		if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+			printf("Ошибка - введен неправильный символ....\n");
+			system("pause");
+			return 0;
+		}
+		else operation = atoi(ElementValue);
 		switch (operation)
 		{
 		case 1:
@@ -126,7 +132,13 @@ int matrix3() {
 					printf("[");
 					printf("%d", j + 1);
 					printf("]: ");
-					cin >> b[i][j];
+					cin >> ElementValue;
+					if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+						printf("Ошибка - введен неправильный символ....\n");
+						system("pause");
+						return 0;
+					}
+					else  b[i][j] = atoi(ElementValue);
 				}
 			printf("\nВведённая матрица: \n");
 			for (i = 0; i < row; i++)
@@ -165,7 +177,13 @@ int matrix3() {
 					printf("[");
 					printf("%d", j + 1);
 					printf("]: ");
-					cin >> b[i][j];
+					cin >> ElementValue;
+					if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+						printf("Ошибка - введен неправильный символ....\n");
+						system("pause");
+						return 0;
+					}
+					else  b[i][j] = atoi(ElementValue);
 				}
 			printf("\nВведённая матрица: \n");
 			for (i = 0; i < row; i++)
@@ -193,7 +211,13 @@ int matrix3() {
 		case 6:
 			printf("\033c");
 			printf("Введите число, которое надо умножить на исходную матрицу: \n");
-			cin >> k;
+			cin >> ElementValue;
+			if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+				printf("Ошибка - введен неправильный символ....\n");
+				system("pause");
+				return 0;
+			}
+			else  k = atoi(ElementValue);
 			printf("\nИсходная матрица: \n");
 			for (i = 0; i < row; i++)
 			{
@@ -210,6 +234,10 @@ int matrix3() {
 				}
 				cout << endl;
 			} break;
+		case 7:
+			printf("\033c");
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
+			break;
 		default:printf("\033c");
 			printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
