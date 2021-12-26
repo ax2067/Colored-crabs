@@ -31,6 +31,8 @@ int main()
 		case 4: printf("\033c"); 
 			  Squares(); break; //-------- модуль Лёши
 		case 5: printf("\033c");
+			Volume(); break; //-------- модуль Иры
+		case 6: printf("\033c");
 		    Additionally(); break; //-------- модуль Саши
 		case 7: printf("\033c");
         printf("Спасибо за эксплуатацию нашего калькулятора! Ожидаем отзывов, комментариев и пожеланий."); break;

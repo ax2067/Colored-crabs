@@ -10,12 +10,12 @@ const double Pi = acos(-1); //Объявляем значение числа Пи
 const double e = 2.7182818284;
 
 double Sin(double x) { //Функция для округления значение синуса
-	return (round(sin(x) * 10000000) / 10000000);
+	return (round(sin(x * Pi /180) * 10000000) / 10000000);
 }
 
 
 double Cos(double x) { //Функция для округления значение косинуса
-	return (round(cos(x) * 10000000) / 10000000);
+	return (round(cos(x * Pi / 180) * 10000000) / 10000000);
 }
 
 double Log(double x, double y) { //Функция для округления значение косинуса
@@ -23,8 +23,8 @@ double Log(double x, double y) { //Функция для округления значение косинуса
 }
 
 double ctg(double x) { //Функция для расчета котангенса
-	double a = cos(x);
-	double b = Sin(x);
+	double a = cos(x * Pi / 180);
+	double b = sin(x * Pi / 180);
 	return (a / b);
 }
 
@@ -118,7 +118,7 @@ bool Maths(stack <Leksema>& Stack_n, stack <Leksema>& Stack_o, Leksema& item) { 
 			return false;
 		}
 		else {
-			c = tan(a);
+			c = 1 / ctg(a);
 			item.type = '0';
 			item.value = c;
 			Stack_n.push(item);
@@ -191,7 +191,7 @@ int Operations()
 	cout << "   1) Не забудьте поздороваться \n";
 	cout << "   2) В случае ошибки смотрите пункт 1 \n";
 
-	cout << "Для испрользования числа Пи введите 'p' \nДля использования числа Е введите 'exp(1)'\nДля использования логарифма введите 'log a b'\n";
+	cout << "Для испрользования числа Пи введите 'p' \nДля использования числа Е введите 'exp(1)'\nДля использования логарифма введите 'log a b' '\nДля использования тангенса введите 'tan a'\n";
 	cout << "   Введите выражение: ";
 	char Ch, Char;//Переменная, в которую будет записываться текущий обрабатываемый символ
 	double value;
