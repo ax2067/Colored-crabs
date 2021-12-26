@@ -32,7 +32,7 @@ void Conversion1()
 			cout << "Число в шестнадцатеричной системе счисления: " << hex << number << endl;
 			break;
 		case 4:
-			cout << "Работа окончена.";
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
 			break;
 		default:
 			if (switch_on > 4)

@@ -180,7 +180,9 @@ int matrix4() {
 				}
 				cout << endl;
 			}break;
-		case 6: printf("\033c"); break;
+		case 6: printf("\033c");
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
+			break;
 		default: printf("\033c"); printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
 		cin.clear();

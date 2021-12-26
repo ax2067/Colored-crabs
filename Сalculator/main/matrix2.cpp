@@ -192,7 +192,9 @@ int matrix2() {
 				cout << endl;
 			}
 			break;
-		case 7: break;
+		case 7: 
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
+			break;
 		default: printf("\033c"); printf("Некорректный вариант. Выберите, пожалуйста, ещё раз!\n");
 		}
 		cin.clear();

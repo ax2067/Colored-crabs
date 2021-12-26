@@ -26,7 +26,7 @@ void Conversion()
 			Conversion3();
 			break;
 		case 4:
-			cout << "Работа окончена." << endl;
+			cout << "Работа окончена. Для продолжения нажмите любую кнопку." << endl;
 			break;
 		default:
 			if (operation > 4)
