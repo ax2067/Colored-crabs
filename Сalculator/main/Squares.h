@@ -14,4 +14,5 @@
 #include "full_consus.hpp"
 #include <Windows.h>
 using namespace std;
-void Squares();
+#define SIZE 500
+int Squares();
