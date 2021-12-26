@@ -47,7 +47,13 @@ int matrix4() {
 		printf("4 - разность матриц\n");
 		printf("5 - умножение матрицы на число\n");
 		printf("6 - выход\n");
-		cin >> operation;
+		cin >> ElementValue;
+		if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+			printf("Ошибка - введен неправильный символ....\n");
+			system("pause");
+			return 0;
+		}
+		else operation = atoi(ElementValue);
 		determinant = a[0][0] * ((a[1][1] * a[2][2] * a[3][3] + a[1][2] * a[2][3] * a[3][1] + a[2][1] * a[3][2] * a[1][3]) - (a[1][3] * a[2][2] * a[3][1] + a[3][2] * a[2][3] * a[1][1] + a[2][1] * a[3][3] * a[1][2])) - a[0][1] * ((a[1][0] * a[2][2] * a[3][3] + a[1][2] * a[2][3] * a[3][0] + a[2][0] * a[3][2] * a[1][3]) - (a[1][3] * a[2][2] * a[3][0] + a[3][3] * a[2][0] * a[1][2] + a[2][3] * a[3][2] * a[1][0])) + a[0][2] * ((a[1][0] * a[2][1] * a[3][3] + a[1][1] * a[2][3] * a[3][0] + a[2][0] * a[3][1] * a[1][3]) - (a[1][3] * a[2][1] * a[3][0] + a[3][3] * a[2][0] * a[1][1] + a[2][3] * a[3][1] * a[1][0])) - a[0][3] * ((a[1][0] * a[2][1] * a[3][2] + a[1][1] * a[2][2] * a[3][0] + a[2][0] * a[3][1] * a[1][2]) - (a[1][2] * a[2][1] * a[3][0] + a[3][2] * a[2][0] * a[1][1] + a[2][2] * a[3][1] * a[1][0]));
 		switch (operation)
 		{
@@ -97,7 +103,13 @@ int matrix4() {
 					printf("[");
 					printf("%d", j + 1);
 					printf("]: ");
-					cin >> b[i][j];
+					cin >> ElementValue;
+					if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+						printf("Ошибка - введен неправильный символ....\n");
+						system("pause");
+						return 0;
+					}
+					else  b[i][j] = atoi(ElementValue);
 				}
 			printf("\nВведённая матрица: \n");
 			for (i = 0; i < row; i++)
@@ -135,7 +147,13 @@ int matrix4() {
 					printf("[");
 					printf("%d", j + 1);
 					printf("]: ");
-					cin >> b[i][j];
+					cin >> ElementValue;
+					if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+						printf("Ошибка - введен неправильный символ....\n");
+						system("pause");
+						return 0;
+					}
+					else  b[i][j] = atoi(ElementValue);
 				}
 			printf("\nВведённая матрица: \n");
 			for (i = 0; i < row; i++)
@@ -163,7 +181,13 @@ int matrix4() {
 		case 5: 
 			printf("\033c");
 			printf("Введите число, которое надо умножить на исходную матрицу: \n");
-			cin >> k;
+			cin >> ElementValue;
+			if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
+				printf("Ошибка - введен неправильный символ....\n");
+				system("pause");
+				return 0;
+			}
+			else  k = atoi(ElementValue);
 			printf("\nИсходная матрица: \n");
 			for (i = 0; i < row; i++)
 			{
