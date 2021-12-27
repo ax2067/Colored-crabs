@@ -3,11 +3,12 @@
 void Circle()
 {
     char ElementValue[SIZE];
+    int Value = 0;
     cout<<"Что вам известно? \n"<<endl;
     cout<<"1) Радиус \n";
     cout<<"2) Длина окружности \n";
-    cin>>initial_data;
-    switch (initial_data)
+    cin>>Value;
+    switch (Value)
     {
         default:{cout<<"Такого варианта не существует"<<endl;break;}
         case 1:

@@ -5,7 +5,7 @@ int Squares()
 {
     char ElementValue[SIZE]; //-----добавь это в каждый модуль. В файлах с расширением h, добавь #define... см. Squares.h
     setlocale(LC_ALL, "en_US.UTF8");
-    int action=0;
+    int Value=0;
     do 
     {
     cout<<"Ввыберите фигуру, площадь которорой необходимо найти \n";
@@ -21,14 +21,14 @@ int Squares()
     cout<<"10) Площадь боковой поверхности конуса \n";
     cout<<"11) Площадь полной поверхности конуса"<<endl;
     cout<<"12) Выход из программы \n";
-    cin >> ElementValue;
+    cin >> Value;
     if (static_cast<int>(ElementValue[0]) > 57 || static_cast<int>(ElementValue[0]) < 48) {
         printf("Ошибка - введен неправильный символ....\n");
         system("pause");
         return 0;
     }
     //else  action = atoi(ElementValue);
-    switch (ElementValue)
+    switch (Value)
     {
         default:{cout<<"Такого варианта не существует \n"; break;}
             
@@ -93,6 +93,6 @@ int Squares()
     }
     cin.clear();
     cin.ignore(32767, '\n');
-    }while (action != 12);
+    }while (Value != 12);
     return 0;
 }

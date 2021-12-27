@@ -50,7 +50,7 @@ void Prglrm()
             cin>>diag2;
             cout<<"Пожалуйста, введите угол в градусах \n";
             cin>>angel;
-            if((diag1<=0)or(diag2<=0)or(height<=0)){cout<<"Неверные данные \n";break;}
+            if((diag1<=0)or(diag2<=0)or(angel<=0)){cout<<"Неверные данные \n";break;}
             square=sin(3.14/360*angel)*diag1*diag2*0.5;
             cout<<"Площадь равна "<<square<<endl;
             break;

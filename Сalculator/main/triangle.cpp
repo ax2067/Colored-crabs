@@ -37,7 +37,7 @@ void Triangle()
             cin>>side2;
             cout<<"Пожалуйста, введите угол в градусах \n";
             cin>>angel;
-            if((side1<=0)or(side2<=)or(angel<=0)){cout<<"Неверные данные \n";break;}
+            if((side1<=0)or(side2<=0)or(angel<=0)){cout<<"Неверные данные \n";break;}
             square=sin(3.14/360*angel)*0.5*side1*side2;
             cout<<"Площадь равна "<<square<<endl;
             break;
