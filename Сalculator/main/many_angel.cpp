@@ -1,6 +1,7 @@
 #include "many_angel.hpp"
 void Many_angel()
 {
+    char ElementValue[SIZE];
     setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно?"<<endl;
@@ -19,6 +20,7 @@ void Many_angel()
             cin>>side;
             cout<<"Введите количество сторон \n";
             cin>>amount;
+            if((side<=0)or(amount<=0)){cout<<"Неверные данные \n";break;}
             square=(amount*side*side)/(4*tan(3.14/amount));
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -31,6 +33,7 @@ void Many_angel()
             cin>>rad_vpis;
             cout<<"Введите количество сторон \n";
             cin>>amount;
+            if((rad_vpis<=0)or(amount<=0)){cout<<"Неверные данные \n";break;}
             square=rad_vpis*rad_vpis*amount*tan(3.14/amount);
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -43,6 +46,7 @@ void Many_angel()
             cin>>rad_opis;
             cout<<"Введите количество сторон \n";
             cin>>amount;
+            if((rad_opis<=0)or(amount<=0)){cout<<"Неверные данные \n";break;}
             square=0.5*rad_opis*rad_opis*amount*sin(3.14*2/amount);
             cout<<"Площадь равна "<<square<<endl;
             break;

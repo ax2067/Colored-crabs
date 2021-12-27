@@ -27,8 +27,8 @@ int Squares()
         system("pause");
         return 0;
     }
-    else  action = atoi(ElementValue);
-    switch (action)
+    //else  action = atoi(ElementValue);
+    switch (ElementValue)
     {
         default:{cout<<"Такого варианта не существует \n"; break;}
             

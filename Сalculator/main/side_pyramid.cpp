@@ -1,6 +1,7 @@
 #include "side_pyramid.hpp"
 void Side_pyramid()
 {
+    char ElementValue[SIZE];
     setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно?"<<endl;
@@ -17,6 +18,7 @@ void Side_pyramid()
             cin>>amount;
             cout<<"Введите площадь боковой грани \n";
             cin>>side_squrae;
+            if((amount<=0)or(side_squrae<=0)){cout<<"Неверные данные \n";break;}
             square=side_squrae*amount;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -29,6 +31,7 @@ void Side_pyramid()
             cin>>perimetr;
             cout<<"Введиет апофему \n";
             cin>>apofema;
+            if((perimetr<=0)or(apofema<=0)){cout<<"Неверные данные \n";break;}
             square=apofema*perimetr;
             cout<<"Площадь равна "<<square<<endl;
             break;
