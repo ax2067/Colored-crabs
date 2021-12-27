@@ -1,7 +1,6 @@
 #include "triangle.hpp"
 void Triangle()
 {
-    char ElementValue[SIZE];
     setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно? \n";
@@ -21,7 +20,6 @@ void Triangle()
             cin>>side2;
             cout<<"Введите сторону 1 \n";
             cin>>side3;
-            if((side1<=0)or(side2<=0)or(side3)){cout<<"Неверные данные \n";break;}
             half_per=(side1+side2+side3)/2;
             square=sqrt(half_per*(half_per-side1)*(half_per-side2)*(half_per-side3));
             cout<<"Площадь равна "<<square<<endl;
@@ -37,7 +35,6 @@ void Triangle()
             cin>>side2;
             cout<<"Пожалуйста, введите угол в градусах \n";
             cin>>angel;
-            if((side1<=0)or(side2<=)or(angel<=0)){cout<<"Неверные данные \n";break;}
             square=sin(3.14/360*angel)*0.5*side1*side2;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -50,7 +47,6 @@ void Triangle()
             cin>>side1;
             cout<<"Введите высоту \n";
             cin>>height;
-            if((side1<=0)or(height<=0)){cout<<"Неверные данные \n";break;}
             square=0.5*side1*height;
             cout<<"Площадь равна "<<square<<endl;
             break;

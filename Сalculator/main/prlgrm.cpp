@@ -1,7 +1,6 @@
 #include "prlgrm.hpp"
 void Prglrm()
 {
-    char ElementValue[SIZE];
     setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно? \n";
@@ -22,7 +21,6 @@ void Prglrm()
             cin>>side2;
             cout<<"Пожалуйста, введите угол в градусах \n";
             cin>>angel;
-            if((side1<=0)or(side2<=0)or(angel<=0)){cout<<"Неверные данные \n";break;}
             square=sin(3.14/360*angel)*side1*side2;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -35,7 +33,6 @@ void Prglrm()
             cin>>side1;
             cout<<"Введите сторону 2 \n";
             cin>>height;
-            if((height<=0)or(side1<=0)){cout<<"Неверные данные \n";break;}
             square=side1*height;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -50,7 +47,6 @@ void Prglrm()
             cin>>diag2;
             cout<<"Пожалуйста, введите угол в градусах \n";
             cin>>angel;
-            if((diag1<=0)or(diag2<=0)or(height<=0)){cout<<"Неверные данные \n";break;}
             square=sin(3.14/360*angel)*diag1*diag2*0.5;
             cout<<"Площадь равна "<<square<<endl;
             break;

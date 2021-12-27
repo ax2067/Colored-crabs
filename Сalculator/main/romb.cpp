@@ -1,7 +1,6 @@
 #include "romb.hpp"
 void Romb()
 {
-    char ElementValue[SIZE];
     setlocale(LC_ALL, "en_US.UTF8");
     int initial_data=0;
     cout<<"Что вам известно? \n";
@@ -20,7 +19,6 @@ void Romb()
             cin>>side1;
             cout<<"Пожалуйста, введите угол в градусах"<<endl;
             cin>>angel;
-            if((side1<=0)or(angel<=0)){cout<<"Неверные данные \n";break;}
             square=side1*side1*sin(3.14/360*angel);
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -33,7 +31,6 @@ void Romb()
             cin>>diag1;
             cout<<"Введите диагональ 2 \n";
             cin>>diag2;
-            if((diag1<=0)or(diag2<=0)){cout<<"Неверные данные \n";break;}
             square=0.5*diag1*diag2;
             cout<<"Площадь равна "<<square<<endl;
             break;
@@ -46,7 +43,6 @@ void Romb()
             cin>>side1;
             cout<<"Введите высоту \n";
             cin>>height;
-            if((side1<=0)or(height<=0)){cout<<"Неверные данные \n";break;}
             square=height*side1;
             cout<<"Площадь равна "<<square<<endl;
             break;
